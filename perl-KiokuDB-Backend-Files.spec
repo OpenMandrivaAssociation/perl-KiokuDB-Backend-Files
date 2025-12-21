@@ -11,6 +11,7 @@ Group:      Development/Perl
 Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/KiokuDB/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires: perl(Directory::Transactional)
 BuildRequires: perl(File::Path)
 BuildRequires: perl(IO)
