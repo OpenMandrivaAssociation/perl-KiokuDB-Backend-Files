@@ -2,14 +2,14 @@
 %define upstream_version 0.06
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Version:    %{upstream_version}
+Release:    2
 
 Summary:    Deprecated, use L<KiokuDB::Backend::Files>
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/KiokuDB/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/KiokuDB-Backend-Files
+Source0:    https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/KiokuDB-Backend-Files-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Directory::Transactional)
