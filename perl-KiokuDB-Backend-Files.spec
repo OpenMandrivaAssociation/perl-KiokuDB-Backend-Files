@@ -1,15 +1,13 @@
 %define upstream_name    KiokuDB-Backend-Files
-%define upstream_version 0.06
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    2
+Version:    0.06
+Release:    3
 
 Summary:    Deprecated, use L<KiokuDB::Backend::Files>
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/dist/KiokuDB-Backend-Files
-Source0:    https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/KiokuDB-Backend-Files-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/N/NU/NUFFIN/KiokuDB-Backend-Files-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Directory::Transactional)
@@ -31,7 +29,7 @@ limited (only a linear scan is supported), but it is suitable for small,
 simple projects.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
